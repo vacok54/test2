@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = 'Deni' //string
+        let age = 18 //number
+
+
+
+        if(age < 15){
+            console.log('Доступ запрещен')
+        }else {
+            console.log(`Привет ${name}`);  
+        }
+
+
+
+        function viewMoney(){
+            console.log('Вот вам 10$');
+        }
+        viewMoney()
+
+
+
+        function getMoney(cash){
+            return(`вот вам ${cash}$`)
+        }
+        getMoney(5)
+
+
+
+        function mate(a){
+            result = a * a
+            console.log(result)
+        }
+        mate(5)
+
+
+
+        function max(a, b, c){
+            return Math.max(a, b, c)
+        }
+        max(5, 10, 15)
+
+
+
+        function discriminant(a, b, c){
+            return b * b - 4 * a * c
+        }
+        discriminant(2, 5, 7)
+
+
+
+        function index(a, b){
+            if(a % 2 == 0 && b % 2 == 0){
+                return a * b
+            }
+            else if(a % 2 !== 0 && b % 2 !== 0) {
+                return a + b
+            }
+            else {
+                return a % 2 !==0 ? a : b
+            }
+        }
+        console.log(index(4, 4));
+        
+    </script>
+</body>
+</html>
